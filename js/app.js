@@ -9,7 +9,9 @@ let colors = [
 ]
 
 function setup() {
-    createCanvas(1980, 1080);
+    let width = window.screen.width;
+    let height = window.screen.height;
+    createCanvas(width, height);
     //stroke(127,63,120);
     fill(0,0,0);
     noStroke();
