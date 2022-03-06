@@ -13,12 +13,12 @@ function draw() {
 
     for (var i = 0; i < 10; i++) {
         if(ShapeItems.length > 1500) break;
-        ShapeItems.push(new Circle()); //append petal object
+        ShapeItems.push(new Circle()); //append item object
     } //random number of ShapeItems each frame
 
     //loop through ShapeItems
     for (let item of ShapeItems) {
-        item.update(t); //update petal position
-        item.display(); //draw petal
+        item.update(t); //update item position
+        item.display(); //draw item
     }
 }
